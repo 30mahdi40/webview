@@ -16,7 +16,7 @@ public class WebActivity extends AppCompatActivity {
         webView = findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         String url = getIntent().getStringExtra("url");
-        if (url != null && !url.startsWith("http")) {
+        if (url != null && !url.startsWith("https://www.digikala.com/")) {
             url = "http://" + url;
         }
         webView.loadUrl(url);
